@@ -1,0 +1,73 @@
+
+package com.abc;
+
+//stringBuffer vs stringBuilder
+// ThreadSafe   --- ThreadUnsafe
+// slow         --  fast  
+// Multi threaded app-- single threaded app
+
+
+//String 
+
+
+class Data{
+	//thread safe -> only one thread can access it at a time
+	public synchronized void getData()
+	{
+		for(int i=0;i<10;i++)
+		{
+			System.out.println(i + Thread.currentThread().getName());
+			
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+			
+		}
+
+}
+
+
+class Accessor extends Thread {
+	
+	Data d;
+	
+	public Accessor(Data d) {
+	this.d=d;	
+	}
+	
+	@Override
+	public void run() {
+		d.getData();
+	}
+	
+	
+	
+}
+//multi tasking --- multi threading
+
+public class Quiz1Questions {
+
+	public static void main(String []a) {        
+	 	
+		Data d=new Data();
+		Data d1=new Data();
+
+		Accessor access=new Accessor(d);
+		Accessor access2=new Accessor(d1);
+		
+
+		
+		
+		Thread t1=new Thread(access,"t1");
+		Thread t2=new Thread(access2,"t2");
+		
+			t1.start();
+			t2.start();
+		
+	}
+
+}
