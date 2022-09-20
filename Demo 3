@@ -1,0 +1,38 @@
+
+package com.abc;
+
+//stringBuffer vs stringBuilder
+// ThreadSafe   --- ThreadUnsafe
+
+//String 
+
+public class Quiz1Questions {
+
+	public static void main(String []a) {        
+	 	
+		Quiz1Questions q1=new Quiz1Questions();
+		
+		String x="hello";
+		x.concat("world");
+		System.out.println(x);
+		//--------------------------
+		
+		System.out.println("----------------------");
+
+		StringBuilder sb=new StringBuilder("hello");	
+		sb.append("world");
+		System.out.println(sb);
+		
+		
+		System.out.println("----------------------");
+
+		StringBuffer sb1=new StringBuffer("hello");	
+		sb1.append("world");
+		System.out.println(sb1);
+		
+		
+		
+		
+	}
+
+}
