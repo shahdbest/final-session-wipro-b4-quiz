@@ -1,0 +1,45 @@
+
+class Employee
+{
+
+	private int empId;
+	private String empName;
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		if(empId <= 1000)
+		this.empId = empId;
+		
+		else
+			this.empId=-2;
+	}
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+
+	
+	
+}
+
+//empid < 1000 
+
+public class Quiz1Questions {
+
+	public static void main(String []a) {        
+	 
+		Employee employee=new Employee();
+	
+		employee.setEmpId(1500);
+		System.out.println(employee.getEmpId());
+	
+		//employee.empId=1500;
+		//System.out.println(employee.empId);
+		
+	}
+
+	
+}
