@@ -1,0 +1,22 @@
+
+NOTE: u cannot use builtin function from string class except the toCharArray
+
+
+---> write a function to reverse a given string 
+
+
+--> write a function to convert a given string into lower case
+
+
+--> write a function to convert a given string in reverse order.. and maintaining the cap postition as it is 
+
+
+ex Input-->  HelloWOrLd
+ex output -->DlrowOLlEh       
+
+
+
+
+
+
+
