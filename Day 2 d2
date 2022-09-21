@@ -1,0 +1,60 @@
+
+package com.abc;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Quiz1Questions{
+	
+	
+	
+	public static void main(String []args) {        
+		
+		
+	List<Car> cars=new ArrayList<>();	
+		
+	
+	cars.add(new Car("baleno","red","maruti"));
+	cars.add(new Car("swift","black","maruti"));
+	cars.add(new Car("etios","red","toyota"));
+	cars.add(new Car("nexon","black","tata"));
+	
+		
+	// for  , iterator  , enumeration -> difference between each of dem
+	
+	
+	
+	Iterator<Car> carsItr= cars.iterator();
+	
+	
+	while(carsItr.hasNext())
+	{
+		
+		Car car= carsItr.next();
+		if(car.getName().equals("nexon"))	
+		carsItr.remove();
+		
+		System.out.println(car);
+	}
+	
+	
+	System.out.println("--------list ------");
+	
+	for(Car c:cars)
+	{
+		System.out.println(c);
+	}
+	
+	
+	
+	
+	
+		
+	}
+	
+
+	
+	}
+
+
