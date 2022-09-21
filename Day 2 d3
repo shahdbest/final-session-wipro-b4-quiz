@@ -1,0 +1,119 @@
+package com.abc;
+
+public class Car implements Comparable<Car>{
+
+	
+	String name;
+	String color;
+	String maker;
+	int carId;
+	public int getCarId() {
+		return carId;
+	}
+	public void setCarId(int carId) {
+		this.carId = carId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getMaker() {
+		return maker;
+	}
+	public void setMaker(String maker) {
+		this.maker = maker;
+	}
+	
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+	public Car(String name, String color, String maker) {
+		super();
+		this.name = name;
+		this.color = color;
+		this.maker = maker;
+	}
+	
+	public Car(String name, String color, String maker,int carId) {
+		super();
+		this.name = name;
+		this.color = color;
+		this.maker = maker;
+		this.carId=carId;
+	}
+	@Override
+	public String toString() {
+		return "Car [name=" + name + " id "+ carId+   " , color=" + color + ", maker=" + maker + "]";
+	}
+	
+	@Override
+	public int compareTo(Car o) {
+
+		//return this.getName().compareTo(o.getName());
+		//name -> asc
+		
+		//return o.getName().compareTo(this.getName());
+		//name ->desc
+		
+		return this.carId - o.carId;
+		//carId --> asc
+	}
+	
+
+	
+}
+
+
+----------------------------------------main
+
+
+package com.abc;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
+public class Quiz1Questions{
+	
+	
+	
+	public static void main(String []args) {        
+		
+		
+	List<Car> cars=new ArrayList<>();	
+		
+	
+	cars.add(new Car("baleno","red","maruti",4));
+	cars.add(new Car("swift","black","maruti",2));
+	cars.add(new Car("etios","red","toyota",1));
+	cars.add(new Car("nexon","black","tata",3));
+	
+
+	Collections.sort(cars);
+		
+	for(Car c:cars)
+	{
+		System.out.println(c);
+	}
+	
+	
+	
+	
+	
+		
+	}
+	
+
+	
+	}
+
+
