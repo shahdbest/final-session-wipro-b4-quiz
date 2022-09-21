@@ -1,0 +1,23 @@
+
+package com.abc;
+public class Quiz1Questions {
+
+	public static void main(String []a) {        
+
+
+	        try 
+	        { 
+	        	System.out.println("try block");
+	        	//System.exit(0);
+	           // return; 
+	        } 
+	        finally 
+	        {
+	            System.out.println( "Finally" ); 
+	        } 
+	    }
+	
+	
+	}
+
+
