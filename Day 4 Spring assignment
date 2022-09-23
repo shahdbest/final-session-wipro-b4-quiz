@@ -1,0 +1,52 @@
+
+-> Create 3 classes 
+-> Employee 
+-> address 
+-> department 
+
+with 5 properties each ..
+where employe has dept and address .. 
+
+
+--> in java configuration create address and dept using @Bean and employee bean 
+
+-->autowire dept and address bean in employee bean 
+
+
+--> get employee bean from the spring container and display the deatils 
+
+
+
+-----------------------------------------------------------------------------------------------assignment 2
+
+
+
+using @Component  create default adddress and department 
+and autowire default address and deparment bean for one of the employee ..
+
+NOTE : do not create address and dept bean using @Bean in configuration 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
