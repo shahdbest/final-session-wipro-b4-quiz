@@ -1,0 +1,40 @@
+
+public class Book {
+
+	int isbn; // instance vars
+	String name; //
+	
+	static String author; // static
+	public Book(int isbn, String name) {
+		super();
+		this.isbn = isbn;
+		this.name = name;
+	}
+
+
+
+
+	public static void main(String[] args) {
+
+	
+		Book b1=new Book(5,"spiderman");
+	
+		Book b2=new Book(6,"batman");
+		
+			b1.author="john";
+			b2.author="rock";
+		
+		System.out.println(b1.name);
+		System.out.println(b2.name);		
+		
+		b1.name="shaktiman";
+		System.out.println("---------------");
+		
+		System.out.println(b1.name);
+		System.out.println(b2.name);		
+		System.out.println(b1.author);
+		System.out.println(b2.author);
+		
+	}
+
+}
