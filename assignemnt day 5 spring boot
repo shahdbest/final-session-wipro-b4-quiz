@@ -1,0 +1,63 @@
+--> create a spring boot project that connect to db(SQL) and perform the following operations 
+
+--> Mobile 
+  -- >IME (primary key)
+  -->model (required)
+  -> maker (required)
+  -> colour
+  -->price (optional) cannot be more dan 1.5 lacs
+  -> processor
+  ->camera
+  
+  ------------------------------------------------------
+
+  -> save mobile
+  -> update mobile
+  -> delete mobile by ime 
+  -> getAllMobilePhone
+  -> getMobilephonewithpricerange (from and to) 10000-50000
+  -> find mobiles by brand 
+  -> find mobiles by colour
+  -> find mobiles by model colour
+  -> find mobile by processor 
+  -> find mobile by processor  (12) equal to greater than the value provided 
+  
+
+  
+  NOTE : mobile once saved with an ime cannot be saved again (should throw an exception mobile already exist)
+  NOTE : give appropriate responses and the httpstatus codes to the end user 
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
