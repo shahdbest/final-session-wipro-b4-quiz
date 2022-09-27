@@ -1,0 +1,5 @@
+
+
+register the monbile service created in previous example to eureka server ..
+
+build a api gateway with jwt enabled and allow the user to access the mobile service via the api gateway .. 
